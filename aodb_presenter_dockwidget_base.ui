@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AODBPresenterDockWidgetBase</class>
+ <widget class="QDockWidget" name="AODBPresenterDockWidgetBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>870</width>
+    <height>592</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AODB Presenter</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>File</string>
+       </attribute>
+       <widget class="QgsFileWidget" name="mQgsFileWidget">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>200</y>
+          <width>371</width>
+          <height>27</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>150</y>
+          <width>131</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Select the file:</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_16">
+        <property name="geometry">
+         <rect>
+          <x>570</x>
+          <y>200</y>
+          <width>111</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string> Recent items</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../Downloads/down-filled-triangular-arrow.png</normaloff>../../Downloads/down-filled-triangular-arrow.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>9</width>
+          <height>9</height>
+         </size>
+        </property>
+        <property name="default">
+         <bool>false</bool>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Main Logic</string>
+       </attribute>
+       <widget class="QWidget" name="gridLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>30</y>
+          <width>668</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="4">
+          <widget class="QPushButton" name="pushButton_5">
+           <property name="text">
+            <string>Airline Name</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../Downloads/down-filled-triangular-arrow.png</normaloff>../../Downloads/down-filled-triangular-arrow.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>9</width>
+             <height>9</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QPushButton" name="pushButton">
+           <property name="text">
+            <string>Arrival/Departure</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../Downloads/down-filled-triangular-arrow.png</normaloff>../../Downloads/down-filled-triangular-arrow.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>9</width>
+             <height>9</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QPushButton" name="pushButton_3">
+           <property name="text">
+            <string>ICAO Aircraft</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../Downloads/down-filled-triangular-arrow.png</normaloff>../../Downloads/down-filled-triangular-arrow.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>9</width>
+             <height>9</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QPushButton" name="pushButton_4">
+           <property name="text">
+            <string>Airline Category/Group</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../Downloads/down-filled-triangular-arrow.png</normaloff>../../Downloads/down-filled-triangular-arrow.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>9</width>
+             <height>9</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="text">
+            <string>Aircraft Name</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../Downloads/down-filled-triangular-arrow.png</normaloff>../../Downloads/down-filled-triangular-arrow.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>9</width>
+             <height>9</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QPushButton" name="pushButton_9">
+           <property name="text">
+            <string>Schengen Status</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../Downloads/down-filled-triangular-arrow.png</normaloff>../../Downloads/down-filled-triangular-arrow.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>9</width>
+             <height>9</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QPushButton" name="pushButton_8">
+           <property name="text">
+            <string>Country</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../Downloads/down-filled-triangular-arrow.png</normaloff>../../Downloads/down-filled-triangular-arrow.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>9</width>
+             <height>9</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QPushButton" name="pushButton_7">
+           <property name="text">
+            <string>Airport Code</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../Downloads/down-filled-triangular-arrow.png</normaloff>../../Downloads/down-filled-triangular-arrow.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>9</width>
+             <height>9</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="pushButton_6">
+           <property name="text">
+            <string>Flight Type</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../Downloads/down-filled-triangular-arrow.png</normaloff>../../Downloads/down-filled-triangular-arrow.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>9</width>
+             <height>9</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="4">
+          <widget class="QPushButton" name="pushButton_10">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins/fligt_v3/style/icons/plus.png</normaloff>../../AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins/fligt_v3/style/icons/plus.png</iconset>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="gridLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>270</y>
+          <width>541</width>
+          <height>80</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="pushButton_12">
+           <property name="text">
+            <string>Flights</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../Downloads/down-filled-triangular-arrow.png</normaloff>../../Downloads/down-filled-triangular-arrow.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>9</width>
+             <height>9</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QPushButton" name="pushButton_13">
+           <property name="text">
+            <string>Cargo (incl. Mail)</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../Downloads/down-filled-triangular-arrow.png</normaloff>../../Downloads/down-filled-triangular-arrow.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>9</width>
+             <height>9</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="pushButton_15">
+           <property name="text">
+            <string>PAX</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../Downloads/down-filled-triangular-arrow.png</normaloff>../../Downloads/down-filled-triangular-arrow.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>9</width>
+             <height>9</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QPushButton" name="pushButton_19">
+           <property name="text">
+            <string>Load Factor PAX</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../Downloads/down-filled-triangular-arrow.png</normaloff>../../Downloads/down-filled-triangular-arrow.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>9</width>
+             <height>9</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QPushButton" name="pushButton_18">
+           <property name="text">
+            <string>Luggage</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../Downloads/down-filled-triangular-arrow.png</normaloff>../../Downloads/down-filled-triangular-arrow.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>9</width>
+             <height>9</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QPushButton" name="pushButton_20">
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins/fligt_v3/style/icons/plus.png</normaloff>../../AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins/fligt_v3/style/icons/plus.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QPushButton" name="pushButton_14">
+           <property name="text">
+            <string>Transfer Pax</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../Downloads/down-filled-triangular-arrow.png</normaloff>../../Downloads/down-filled-triangular-arrow.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>9</width>
+             <height>9</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="pushButton_11">
+           <property name="text">
+            <string>Seats</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../Downloads/down-filled-triangular-arrow.png</normaloff>../../Downloads/down-filled-triangular-arrow.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>9</width>
+             <height>9</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>140</y>
+          <width>671</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="dateTimeLayout">
+         <item row="1" column="1">
+          <widget class="QgsCheckableComboBox" name="weekComboBox">
+           <property name="currentText">
+            <string/>
+           </property>
+           <item>
+            <property name="text">
+             <string>Monday</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Tuesday</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Wednesday</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Thursday</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Friday</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Saturday</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Sunday</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLabel" name="label_10">
+           <property name="text">
+            <string>To...</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QTimeEdit" name="fromTime">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>22</height>
+            </size>
+           </property>
+           <property name="calendarPopup">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="label_9">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>19</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>From...</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="label_12">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>19</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Weekdays:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="5" rowspan="2">
+          <widget class="QPushButton" name="dateRangeSelect">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="text">
+            <string> Date range</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../../Downloads/calendar.png</normaloff>../../Downloads/calendar.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QTimeEdit" name="toTime"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QComboBox" name="comboBox">
+           <item>
+            <property name="text">
+             <string>Scheduled Time</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_13">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>19</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Time type:</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>110</y>
+          <width>80</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Date/Time selection</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_14">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>240</y>
+          <width>77</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Displayers</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>0</y>
+          <width>68</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Selectors</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="airlineRadio">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>410</y>
+          <width>151</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Make diagram by...</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="airlineBox">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>440</y>
+          <width>191</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>440</y>
+          <width>181</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Editable layer name</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>410</y>
+          <width>127</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Layer name:</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="startButton">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>410</y>
+          <width>121</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Start!</string>
+        </property>
+       </widget>
+       <widget class="Line" name="line_8">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>-140</y>
+          <width>21</width>
+          <height>1151</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>15</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="QTextBrowser" name="displaySelection">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>40</y>
+          <width>151</width>
+          <height>351</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>10</y>
+          <width>127</width>
+          <height>19</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>10</y>
+          <width>68</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Info:</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QgsCheckableComboBox</class>
+   <extends>QComboBox</extends>
+   <header>qgscheckablecombobox.h</header>
+  </customwidget>
+  <customwidget>
+   <class>QgsFileWidget</class>
+   <extends>QWidget</extends>
+   <header>qgsfilewidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
